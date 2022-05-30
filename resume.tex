@@ -1,0 +1,176 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{pifont}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}{\titlerule[.2pt]}]
+
+\renewcommand\labelitemi{---}
+
+%-------------------------
+
+\newcommand{\datedSubheading}[2]{
+    \item
+    \textbf{#1} \hfill \textit{#2}
+    \vspace{-2pt}
+}
+
+\newcommand{\titledSubheading}[3]{
+    \item
+    \textbf{#1} \hfill \textit{#2} \\
+    \textit{#3}
+    \vspace{-2pt}
+}
+
+\newcommand{\descriptionItem}[1]{
+    \item\small{#1}\vspace{-2pt}
+}
+
+\newcommand{\titledItem}[2]{
+    \descriptionItem{\textbf{#1:} #2}
+}
+
+\newcommand{\descriptionListStart}{
+    \vspace{-3pt}\begin{itemize}[label={\small\ding{118}}, leftmargin=*]
+}
+
+\newcommand{\descriptionListEnd}{\end{itemize}}
+
+\newcommand{\subheadingListStart}{\begin{itemize}[label={}, leftmargin=*]}
+\newcommand{\subheadingListEnd}{\end{itemize}}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+%-----------------------------
+
+\begin{document}
+
+\textbf{\LARGE Mitchell Nuckols} \\
+\href{https://mitch.cx}{Website: mitch.cx} {\large\textperiodcentered}
+\href{https://github.com/Mitchell-Nuckols}{GitHub: Mitchell-Nuckols} {\large\textperiodcentered}
+\href{mailto:mitchnuckols@gmail.com}{Email: mitchnuckols@gmail.com}
+
+% Skills
+\section{Skills}
+
+%\begin{minipage}{0.45\textwidth}
+\descriptionListStart
+    \titledItem{Languages}{C/C++, Go, C\#, Python, HTML, CSS, JavaScript, Verilog}
+    \titledItem{Applications}{Git, Docker, Bamboo, Jira, Bitbucket}
+    \titledItem{Developer Practices}{Gitflow, Scrum, Agile}
+\descriptionListEnd
+%\end{minipage}
+%\begin{minipage}{0.45\textwidth}
+%\descriptionListStart
+%    \titledItem{Languages}{C/C++, Go, C\#, Python}
+%    \titledItem{Applications}{Git, Bamboo, Jira, Bitbucket}
+%\descriptionListEnd
+%\end{minipage}
+
+% Experience
+\section{Experience}
+\subheadingListStart
+
+    \titledSubheading
+    {UCSD ITS}{November 2021 - Present}
+    {Build and Release Services Student Worker}
+    \descriptionListStart
+        \titledItem{Skills}{Python, Docker, Bamboo, BitBucket, Sonar, NiFi, Jira}
+        \descriptionItem{Test and improve CI/CD and DevOps workflows for application developers}
+        \descriptionItem{Write testing/QA automation tools in Python}
+    \descriptionListEnd
+
+    \titledSubheading
+    {UCSD CSE/ITS}{February 2020 - March 2021}
+    {Student Web Developer}
+    \descriptionListStart
+        \titledItem{Skills}{.NET Core, EntityFramework Core, SQL Server, HTML, CSS, Angular, Agile/Scrum}
+        \descriptionItem{Developed backend web services and frontend interface}
+        \descriptionItem{Built RESTful web services using .NET Core that interfaced with SQL Server and web APIs}
+    \descriptionListEnd
+
+    \titledSubheading
+    {Martin Malkasian, Esq.}{January 2019 - May 2019}
+    {Web Designer}
+    \descriptionListStart
+        \titledItem{Skills}{HTML, CSS, JavaScript, Wordpress}
+        \descriptionItem{Built a complete website from the gorund up and configured a cleint-friendly hosting solution}
+        \descriptionItem{Repaired and maintained an existing Wordpress site}
+    \descriptionListEnd
+
+    \titledSubheading
+    {Varo-Real Investments, Inc.}{March 2017 - September 2017}
+    {Lead Web Developer}
+    \descriptionListStart
+        \titledItem{Skills}{HTML, SASS, JavaScript, D, MongoDB}
+        \descriptionItem{Developed and internally deployed a web application MVP in 3 months}
+        \descriptionItem{Interviewed and hired other developers to the project}
+    \descriptionListEnd
+
+\subheadingListEnd
+
+% Education
+\section{Education}
+\subheadingListStart
+
+    \titledSubheading
+    {University of California, San Diego}{August 2019 - March 2023}
+    {B.S Electrical Engineering: Computer System Design}
+    \descriptionListStart
+        \descriptionItem{Senior academic standing}
+        \descriptionItem{120 units completed towards EE major}
+        \descriptionItem{20 units completed towards a minor in biology}
+    \descriptionListEnd
+
+\subheadingListEnd
+
+% Projects
+\section{Projects}
+\subheadingListStart
+
+    \datedSubheading{Project In a Box}{October 2021 - Present}
+    \descriptionListStart
+        \descriptionItem{Hosted workshops and helped teach entry-level engineering concepts to K-12 and college-level students}
+        \descriptionItem{Taught Arduino, basic electronics, beginning engineering concepts}
+    \descriptionListEnd
+
+    \datedSubheading{Summer Engineering Institute}{August 2019 - September 2019}
+    \descriptionListStart
+        \titledItem{Skills}{Python, Matlab, Arduino, EagleCAD, Fusion 360}
+        \descriptionItem{Started engineering curriculum at UCSD and participated in skill-building workshops}
+        \descriptionItem{Completed ECE 5 and ENG 10, both of which are team-based project courses}
+    \descriptionListEnd
+
+\subheadingListEnd
+
+\end{document}

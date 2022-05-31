@@ -6,7 +6,7 @@
 name: writeapaper
 on: [push]
 jobs:
-  paper:
+  compile:
     runs-on: ubuntu-latest
     env:
       # Edit here with the names of your latex file and directory (can use ".")
@@ -31,7 +31,7 @@ jobs:
           path: ./github_artifacts
   deploy:
     # Edit here if compiling multiple papers
-    needs: [paper]
+    needs: [compile]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
